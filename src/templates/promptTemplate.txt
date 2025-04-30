@@ -1,0 +1,31 @@
+You are a Senior QA Automation Engineer.
+
+Your task is to convert the following Gherkin scenario into an automated test using Playwright with TypeScript.
+Requirements:
+
+Use BDD structure with Given, When, And, Then to organize the test logic clearly.
+
+Follow industry best practices for clean, maintainable, and scalable test code.
+
+Use the Cucumber syntax and Playwright with TypeScript.
+
+📄 Template to follow:
+
+import { Given, When, Then } from '@cucumber/cucumber';
+
+Given('Name', async () => {
+
+});
+
+When('Name', async () => {
+  await page.fill('#username', 'validUser');
+});
+
+Then('Name', async () => {
+  await expect(page.locator('h1')).toHaveText('Dashboard');
+});
+
+🧪 Gherkin Scenario:
+{{gherkin_input}}
+
+Expected Output: A TypeScript test file using Playwright and Cucumber-style step definitions that reflects the Gherkin scenario in working automated code.
